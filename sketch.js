@@ -1,7 +1,29 @@
+let array = [];
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
+  background(220);
+
+  strokeWeight(5);
 }
 
 function draw() {
-  background(220);
+
+  if (mouseIsPressed ==true){
+    line(mouseX, mouseY, pmouseX, pmouseY);
+
+  }
+
+}
+
+function keyTyped(){
+
+  if (key === 's'){
+    saveCanvas('fileName', 'png' )
+  } else if (key === 'd'){
+
+
+  }
+
+  return false;
 }
